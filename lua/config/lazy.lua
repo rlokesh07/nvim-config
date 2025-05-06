@@ -41,7 +41,11 @@ require("lazy").setup({
 		{'akinsho/toggleterm.nvim', version = "*", config = true},
 		{"nvim-tree/nvim-tree.lua"},
         {'neovim/nvim-lspconfig'},
-
+        {'mbbill/undotree',
+             keys = {
+                { "<leader>u", "<cmd>UndotreeToggle<cr>", desc = "Toggle Undotree" },
+              },
+        }, 
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.

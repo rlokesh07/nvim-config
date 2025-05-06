@@ -5,7 +5,6 @@ require("config.remap")
 require("competitest").setup()
 require("mason").setup()
 
-
 local lspconfig = require("lspconfig")
 
 lspconfig.lua_ls.setup({})
@@ -38,6 +37,10 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.nu = true
 vim.opt.relativenumber = true
+
+vim.g.undotree_WindowLayout = 2  -- vertical split
+vim.g.undotree_SplitWidth = 20   -- set width to 50 columns
+
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
