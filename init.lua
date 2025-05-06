@@ -3,6 +3,15 @@ require("config.lazy")
 require("config.sets")
 require("config.remap")
 require("competitest").setup()
+require("mason").setup()
+
+
+local lspconfig = require("lspconfig")
+
+lspconfig.lua_ls.setup({})
+
+lspconfig.pyright.setup({})
+lspconfig.texlab.setup({})
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -54,7 +63,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80" im.opt.isfname:append("@-@")
+vim.opt.colorcolumn = "80" vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 

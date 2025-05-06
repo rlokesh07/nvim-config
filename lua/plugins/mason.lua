@@ -6,12 +6,12 @@ return {
       require("mason").setup()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "tsserver",
           "pyright",
           "rust_analyzer",
           "gopls",
           "clangd",
           "lua_ls",
+          "texlab",
         },
         automatic_installation = true,
       })
