@@ -1,7 +1,7 @@
 return {
   {
     "williamboman/mason.nvim",
-    dependencies = { "williamboman/mason-lspconfig.nvim" },
+    dependencies = { "williamboman/mason-lspconfig.nvim",},
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup({
@@ -13,7 +13,6 @@ return {
           "lua_ls",
           "texlab",
         },
-        automatic_installation = true,
       })
     end,
   }
