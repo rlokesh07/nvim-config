@@ -31,3 +31,7 @@ vim.api.nvim_set_keymap("n", "<leader>g", ":ToggleTerm<CR>", { noremap = true, s
 vim.api.nvim_set_keymap("n", "<leader>h", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>p", ":CompetiTest receive problem<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>r", ":CompetiTest run<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("i", "jk", "<Esc>", {noremap = true, silent = true})
+vim.keymap.set("t", "jk", "<Esc>", {noremap = true, silent = true})
+vim.keymap.set("v", "jk", "<Esc>", {noremap = true, silent = true})
